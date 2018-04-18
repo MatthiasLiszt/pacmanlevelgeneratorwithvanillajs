@@ -42,9 +42,12 @@ body{
  background-color: black;	
 }
 
-#Navbar button {
+#navBar button {
  border: none;
  color: white;
  font-size: 2em;
  background-color: transparent;
+ float: right;
+ margin: 2vw;	
+}
 }
