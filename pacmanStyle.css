@@ -1,0 +1,50 @@
+#navBar{
+ width: 100vw;	
+}
+
+#navBar button{
+  float: right;
+  margin: 2vw;	
+}
+
+#paclevel{
+ clear:  both;	
+ margin:  10vw auto;
+ border: blue solid;
+ border-radius: none;
+ width: 66vw;
+ height: 66vh;	
+}
+
+.wall{
+ background-color: blue;
+ width: calc(100% / 40);
+ height:  calc(100% / 24);
+ float: left;	
+}
+
+.path{
+ background-color: grey;
+ width: calc(100% / 40);
+ height:  calc(100% / 24);	
+ float: left;
+}
+
+.cookie{
+ background-color: yellow;
+ width: 60%;
+ height: 60%;
+ border-radius: 30%; 
+ margin: 10%;	
+}
+
+body{
+ background-color: black;	
+}
+
+#Navbar button {
+ border: none;
+ color: white;
+ font-size: 2em;
+ background-color: transparent;
+}
