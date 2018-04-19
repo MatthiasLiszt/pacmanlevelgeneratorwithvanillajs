@@ -12,12 +12,13 @@ function fillPacmanLevel(x) {
     for (var i = 0; i < x.length; ++i) {
         ll = x[i].split('');
         //console.log(ll);
-        for (var j = 0; j < ll.length; ++j) {
+        for (var j = 0; j < ll.length; ++j) 
+         {      
             if (ll[j] == 'x') {
-                newLevel.push("<div class='wall'></div>");
+                newLevel.push("<div class='wall' id='x"+j+"y"+i+ "'></div>");
             }
             if (ll[j] == 'o') {
-                newLevel.push("<div class='path'><div class='cookie'></div></div>");
+                newLevel.push("<div class='path' id='x"+j+"y"+i+"'><div class='cookie'></div></div>");
             }
         }
     }
