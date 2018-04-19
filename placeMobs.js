@@ -33,7 +33,7 @@ function placeGhost1(){
    y=Math.floor(Math.random()*24);
    id.push("x"+x+"y"+y);
    ++i;
-   mobs=(x==pacmanPositionX)&&(y==pacmanPositionY);
+   mobs=(x==pacmanPositionX)||(y==pacmanPositionY);
    wall=(document.getElementById(id[i-1]).className=="wall");
   }
  while(wall||mobs);
@@ -55,7 +55,7 @@ function placeGhost2(){
    y=Math.floor(Math.random()*24);
    id.push("x"+x+"y"+y);
    ++i;
-   mobs=(x==pacmanPositionX)&&(y==pacmanPositionY)&&(x==ghost1PositionX)&&(y==ghost1PositionY);
+   mobs=(x==pacmanPositionX)||(y==pacmanPositionY)||(x==ghost1PositionX)||(y==ghost1PositionY);
    wall=(document.getElementById(id[i-1]).className=="wall");
   }
  while(wall||mobs);
